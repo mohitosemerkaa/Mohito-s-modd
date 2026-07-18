@@ -1,0 +1,60 @@
+type: ItemTurret
+name: Pyromaniac
+description: Uses flammable materials as ammo to create a large flame.
+size: 3
+reload: 9
+inaccuracy: 0
+drawer: {
+  type: DrawTurret
+}
+shootSound: shoot-small-flame
+researchCostMultiplier: 3.0
+range: 180
+shootY: 6
+outlineColor: 42413e
+ammoTypes: {
+  coal: {
+    ammoMultiplier: 1
+    type: ContinuousFlameBulletType
+    lifetime: 27
+    drawFlare: false
+    hitColor: ffc9a2
+    damage: 30
+    knockback: 1.5
+    pierce: true
+    pierceArmor: false
+    length: 240
+    width: 3.0
+    colors: [e99558, f3ad7a, ffc9a2, ffdfc7, ffffff]
+    statusEffect: burning
+  }
+  pyratite: {
+    ammoMultiplier: 1
+    type: ContinuousFlameBulletType
+    lifetime: 30
+    drawFlare: false
+    hitColor: ffc9a2
+    damage: 49
+    knockback: 2
+    pierce: true
+    pierceArmor: false
+    length: 240
+    width: 3.3
+    colors: [d77751, e78f6c, fca988, ffc5ae, ffffff]
+    statusEffect: burning
+  }
+}
+category: turret
+research: {
+   parent: scorch 
+   objectives: [
+      scorch,
+      Electrum
+   ]
+}
+requirements: [
+  copper/500
+  graphite/180
+  Electrum/120
+  titanium/240
+]
