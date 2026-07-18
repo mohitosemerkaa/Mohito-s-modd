@@ -1,0 +1,41 @@
+type: GenericCrafter
+name: Electrum Smelter
+description: "Fuses titanium with silicon
+into a charged alloy called Electrum"
+size: 2
+scaledHealth: 300
+craftEffect: smeltsmoke
+outputItems: [
+  Electrum/2
+]
+consumes: {
+  power: 5.5
+  items: [
+    titanium/3
+    silicon/1
+  ]
+}
+craftTime: 120
+category: crafting
+research: {
+  parent: siliconSmelter
+}
+requirements: [
+  copper/200
+  silicon/50
+  titanium/100
+  lead/140
+]
+researchCostMultiplier: 4.5
+drawer: {
+    type: DrawMulti
+    drawers: [
+        {
+            type: DrawDefault
+        }
+    {
+        type: DrawRegion
+        suffix: -top
+    }
+        ]
+}
