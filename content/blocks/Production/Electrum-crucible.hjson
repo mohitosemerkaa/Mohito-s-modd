@@ -1,0 +1,41 @@
+type: GenericCrafter
+name: Electrum Crucible
+description: Fuses titanium and silicon into large quantities of Electrum. Requires a lot of energy.
+size: 3
+scaledHealth: 120
+craftEffect: smeltsmoke
+outputItems: [
+  Electrum/7
+]
+consumes: {
+  power: 4.3
+  items: [
+    titanium/5
+    silicon/2
+  ]
+}
+craftTime: 120
+category: crafting
+research: {
+  parent: electrumSmelter
+}
+requirements: [
+  copper/190
+  silicon/120
+  titanium/120
+  lead/100
+  plastanium/80
+  Electrum/40
+]
+researchCostMultiplier: 6.0
+drawer: {
+  type: DrawMulti
+  drawers: [
+    { type: DrawDefault
+    }
+    {
+    type: DrawArcSmelt
+    flameRadiusScl: 4.0
+    }
+    ]
+}
