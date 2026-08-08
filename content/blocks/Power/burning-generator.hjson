@@ -1,0 +1,44 @@
+type: ConsumeGenerator
+name: Burning generator
+description: Burns flammable materials to create small amounts of power.
+size: 1
+category: power
+research: {
+  parent: core-shadow
+  objectives: [
+    {
+      type: OnSector
+      preset: Mines
+    }
+  ]
+}
+squareSprite: false
+requirements: [
+  copper/30
+  lead/30
+  cobalt/30
+]
+consumes: {
+  itemFlammable: {}
+}
+powerProduction: 1.2
+itemDuration: 130
+generateEffect: generatespark
+ambientSound: loopSmelter
+ambientSoundVolume: 0.03
+drawer: {
+  type: DrawMulti
+  drawers: [
+    {
+      type: DrawRegion
+      suffix: -bottom
+    }
+    {
+      type: DrawCrucibleFlame
+    }
+    {
+      type: DrawDefault
+    }
+  ]
+} 
+researchCostMultiplier: 0.5

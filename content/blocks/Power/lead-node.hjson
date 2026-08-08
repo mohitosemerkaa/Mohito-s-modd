@@ -1,0 +1,15 @@
+type: PowerNode
+name: Lead node
+description: Transports energy.
+size: 1
+squareSprite: false
+laserRange: 8
+maxNodes: 5
+health: 45
+requirements: [
+  lead/20
+  copper/20
+]
+category: power
+research: burning-generator
+researchCostMultiplier: 0.3

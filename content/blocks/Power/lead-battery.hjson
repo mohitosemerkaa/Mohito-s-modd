@@ -1,0 +1,16 @@
+type: Battery
+name: Lead battery
+description: A simple battery made for holding and storing power.
+health: 80
+size: 1
+squareSprite: false
+consumes: {
+  powerBuffered: 3500
+}
+requirements: [
+  lead/20
+  cobalt/10
+]
+category: power
+research: burning-generator
+researchCostMultiplier: 0.8
