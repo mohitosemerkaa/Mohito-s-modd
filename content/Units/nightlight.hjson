@@ -4,7 +4,7 @@ name: Nightlight
 description: A Shadow core protector, can build.
 buildSpeed: 1.0
 buildDistance: 250
-mineSpeed: 1.75
+mineSpeed: 4.5
 mineDistance: 90
 mineTier: 1
 drag: 0.08
