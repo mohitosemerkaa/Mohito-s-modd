@@ -1,4 +1,4 @@
-type: BurstDrill
+type: Drill
 name: Copper Drill
 description: Drill that mines ores
 size: 2
