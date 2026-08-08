@@ -1,0 +1,8 @@
+name: Cobalt
+description: The metal used in the energy sector. Also has quite high strength.
+hardness: 1
+cost: 8
+color: 4b5bab
+research: {
+  parent: core-shadow
+}
