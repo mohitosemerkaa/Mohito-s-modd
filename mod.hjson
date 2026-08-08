@@ -1,7 +1,18 @@
 name: "MohitosModd"
-description: added new block - Electrum Crucible
+description: "-Added new planet: Componda
+-Added 4 new turrets!
+-Added silicon furnace
+-Added 7 units
+-Added 3 sectors for Componda
+-Added new item: cobalt
+-Added distribution blocks
+-Added power blocks
+-Added walls (electrum, lead)
+-Added drills
+-Balance improvements
+-Bug fixes"
 author: "MohitoSemerka"
 minGameVersion: 159.6
-version: "0.3b"
+version: "1.0"
 displayName: "Mohito's Modd"
 subtitle: Trying to make modd for mindustry
