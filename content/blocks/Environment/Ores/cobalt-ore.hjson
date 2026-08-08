@@ -1,0 +1,5 @@
+type: OreBlock
+name: Cobalt ore
+color: 4b5bab
+itemDrop: cobalt
+
