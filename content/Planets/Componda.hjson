@@ -1,0 +1,163 @@
+localisedName: Componda
+name: Componda
+alwaysUnlocked: true
+accessible: true
+visible: true
+mesh: [
+ {
+    //water
+    type: NoiseMesh
+    planet: Componda
+    divisions: 5
+    seed: 7
+    radius: 1.229
+    color1: 587d89
+    color2: 5e95a8
+    octaves: 3.7
+    persistence: 1.1
+  }
+  {
+    //Stone
+    type: NoiseMesh
+    planet: Componda
+    divisions: 5
+    radius: 1.22
+    seed: 94
+    color1: a9e9dd
+    color2: e2e1c4
+    octaves: 3.7
+    persistence: 0.6
+  }
+  {
+    //sand
+    type: NoiseMesh
+    planet: Componda
+    divisions: 6
+    seed: 101
+    radius: 1.2441
+    color1: babca8
+    color2: c6c282
+    octaves: 5.1
+    persistence: 0.8
+  }
+  {
+    //Blackstone
+    type: NoiseMesh
+    planet: Componda
+    seed: 160
+    divisions: 5
+    color1: 29292f
+    color2: 404044
+    radius: 1.212
+    octaves: 4
+    persistence: 1
+    scale: 0.75
+    mag: 1
+  }
+]
+cloudMesh: [
+ {
+   type: HexSkyMesh
+   planet: asthosus
+   speed: 1.21
+   radius: 0.1
+   divisions: 6
+   color: eafffd7e
+   octaves: 3
+   persistence: 0.3
+   scl: 1
+   thresh: 0.6
+  }
+  {
+   type: HexSkyMesh
+   planet: asthosus
+   speed: 1.01
+   radius: 0.11
+   divisions: 6
+   color: eafffd7e
+   octaves: 3
+   persistence: 0.4
+   scl: 0.9
+   thresh: 0.6
+  }
+  {
+   type: HexSkyMesh
+   planet: asthosus
+   speed: 0.891
+   radius: 0.091
+   divisions: 6
+   color: eafffd7e
+   octaves: 3
+   persistence: 0.5
+   scl: 1.1
+   thresh: 0.6
+  }
+]
+generator: {
+  octaves: 3
+  persistence: 0.52
+  scale: 22
+  mag: 0.721
+  thresh: 1.152
+  min: 100
+  max: 100
+  radMin: 220
+  radMax: 600
+  iceChance: 0.51
+  carbonChance: 0.32
+  berylChance: 0
+  ferricChance: 0.26
+}
+allowCampaignRules: true
+allowLaunchLoadout: false
+allowLaunchSchematics: false
+allowLaunchToNumbered: false
+allowLegacyLaunchPads: false
+allowSectorInvasion: false
+allowSelfSectorLaunch: false
+allowWaves: true
+
+iconColor: 8e8e8e
+hasAtmosphere: true
+atmosphereColor: 666359
+bloom: false
+
+rules: {
+ coreDestroyClear: true
+}
+
+campaignRuleDefaults: {
+ hideSpawns: false
+}
+
+atmosphereRadIn: 0
+atmosphereRadOut: 0.3
+startSector: 0
+sectorSize: 1
+sectorSeed: 14513
+parent: sun
+solarSystem: sun
+tidalLock: true
+drawOrbit: true
+orbitRadius: 25
+orbitSpacing: 1
+radius: 1.2
+minZoom: 1
+
+showRtsAIRule: true
+prebuildBase: false
+clearSectorOnLose: true
+defaultCore: core-shadow
+enemyCoreSpawnReplace: false
+updateLighting: false
+
+launchCandidates: []
+itemWhitelist: [
+  "cobalt", 
+  "silicon",
+  "coal", 
+  "Electrum", 
+  "copper",
+  "lead", 
+  "sand"
+]
