@@ -1,0 +1,15 @@
+difficulty: 2
+name: Blackstone bastion
+description: An enemy base has been detected in this sector. Research the ground unit factory or the mech unit factory and destroy the enemy base.
+planet: Componda
+sector: 3
+research: {
+  parent: Mines
+  objectives: [
+    ground-unit-factory,
+    {
+      type: SectorComplete
+      preset: Mines
+    }
+  ]
+}
