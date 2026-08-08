@@ -1,0 +1,49 @@
+type: mech
+name: Conflict
+description: Tier 2 unit with powerful machine gun on it
+speed: 0.777777
+flying: false
+health: 600
+armor: 4
+hitSize: 10
+outlineColor: 44413c
+mechLegColor: 44413c
+stepSound: mechStepSmall
+stepSoundPitch: 0.8
+stepSoundVolume: 0.65
+weapons: [
+  {
+    x: 0
+    y: -6
+    reload: 10
+    mirror: false
+    rotate: true
+    name: Conflict-weapon
+    shootSound: shootArtillerySmall
+    shootSoundVolume: 1.55
+    bullet: {
+      type: BasicBulletType
+      width: 12
+      height: 16
+      speed: 3
+      lifetime: 35
+      frontColor: ffffff
+      backColor: aa9900
+      damage: 16
+      shootEffect: shootBig2
+      smokeEffect: shootBigSmoke
+      hitEffect: blastExplosion
+      }
+}
+]
+research: {
+  parent: quarrel
+  objectives: [
+    additive-reconstructor
+  ]
+  requirements: [
+  Electrum/1200
+  silicon/500
+  ]
+}  
+researchCostMultiplier: 2.0
