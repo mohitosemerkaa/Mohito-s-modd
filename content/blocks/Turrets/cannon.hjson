@@ -1,0 +1,66 @@
+type: ItemTurret
+name: Cannon
+description: Uses resourses like copper to shoot.
+size: 1
+reload: 30
+health: 240
+inaccuracy: 5
+drawer: {
+  type: DrawTurret
+}
+shootSound: shootSmall
+researchCostMultiplier: 3.0
+range: 150
+shootY: 2
+outlineColor: 42413e
+ammoTypes: {
+  copper: {
+    ammoMultiplier: 1
+    type: BasicBulletType
+    speed: 3
+    lifetime: 65
+    drawFlare: false
+    hitColor: ffc9a2
+    damage: 14
+    knockback: 0
+    pierce: false
+    pierceArmor: false
+    heigth: 3
+    width: 3
+    frontColor: ffffff
+    backColor: aa9900
+  }
+  lead: {
+    ammoMultiplier: 1
+    type: BasicBulletType
+    speed: 3
+    lifetime: 70
+    drawFlare: false
+    hitColor: ffc9a2
+    damage: 25
+    knockback: 2
+    pierce: false
+    pierceArmor: false
+    heigth: 3
+    width: 3
+    frontColor: ffffff
+    backColor: aa9900
+    reloadMultiplier: 0.9
+
+  }
+}
+category: turret
+research: {
+parent: core-shadow
+}
+requirements: [
+  copper/20
+  lead/10
+]
+coolant: {
+  type: ConsumeCoolant
+  allowGas: false
+  allowLiquid: true
+  amount: 0.2
+}
+researchCostMultiplier: 0.2

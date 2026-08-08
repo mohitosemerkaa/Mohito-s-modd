@@ -1,0 +1,67 @@
+type: ItemTurret
+name: Fire
+description: Uses coal or pyratite to make a small, but strong fire.
+size: 1
+reload: 8
+inaccuracy: 0
+health: 240
+targetAir: false
+drawer: {
+  type: DrawTurret
+}
+shootSound: shootSmite
+researchCostMultiplier: 1.2
+range: 90
+shootY: 1
+outlineColor: 42413e
+ammoTypes: {
+  coal: {
+    ammoMultiplier: 1
+    type: ContinuousFlameBulletType
+    lifetime: 10
+    drawFlare: false
+    hitColor: ffc9a2
+    damage: 14
+    knockback: 3.5
+    pierce: true
+    pierceArmor: false
+    length: 95
+    width: 2.0
+    colors: [e99558, f3ad7a, ffc9a2, ffdfc7, ffffff]
+    statusEffect: burning
+  }
+pyratite: {
+    ammoMultiplier: 2
+    type: ContinuousFlameBulletType
+    lifetime: 10
+    drawFlare: false
+    hitColor: ffc9a2
+    damage: 35
+    knockback: 2.0
+    pierce: true
+    pierceArmor: false
+    length: 95
+    width: 2.2
+    colors: [e99558, f3ad7a, ffc9a2, ffdfc7, ffffff]
+    statusEffect: burning
+  }
+}
+category: turret
+research: {
+   parent: cannon 
+   objectives: [
+      coal,
+      cobalt
+   ]
+}
+requirements: [
+  copper/35
+  lead/30
+  cobalt/20
+]
+coolant: {
+  type: ConsumeCoolant
+  allowGas: false
+  allowLiquid: true
+  amount: 0.5
+}

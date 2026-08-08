@@ -1,0 +1,48 @@
+type: PowerTurret
+name: Effulgence
+description: Charges up to fire 5 laser beams at enemies
+size: 3
+reload: 150
+accurateDelay: false
+inaccuracy: 1
+shoot: {
+  firstShotDelay: 50
+  shots: 5
+  shotDelay: 8
+}
+range: 190
+outlineColor: 42413e
+shootSound: shootLaser
+chargeSound: chargeLancer
+researchCostMultiplier: 4.0
+shootType: {
+  type: LaserBulletType
+  colors: [00fffb, 97fbfc, ffffff]
+  lightningColor: 97fbfc
+  length: 192
+  lightning: 5
+  lightningLength: 8
+  lightningDamage: 10
+  lightningCone: 45
+  damage: 70
+  buildingDamageMultiplier: 0.3
+  chargeEffect: lightningCharge
+  pierceCap: 7
+  }
+category: turret
+research: lancer
+requirements: [
+  Electrum/40
+  titanium/60
+  silicon/180
+  lead/120
+]
+consumes: {
+  power: 6
+}
+coolant: {
+  type: ConsumeCoolant
+  allowGas: false
+  allowLiquid: true
+  amount: 0.2
+}

@@ -1,0 +1,45 @@
+type: PowerTurret
+name: Lightning
+description: Shoots small lightning bolts, requires energy
+size: 1
+reload: 70
+inaccuracy: 1
+range: 90
+outlineColor: 42413e
+shootSound: shootLaser
+chargeSound: chargeLancer
+researchCostMultiplier: 1.0
+shootType: {
+  type: LightningBulletType
+  colors: [00fffb, 97fbfc, ffffff]
+  lightningColor: 97fbfc
+  lightning: 1
+  lightningLength: 93
+  lightningDamage: 30
+  lightningCone: 15
+  buildingDamageMultiplier: 0.3
+  piercing: true
+  }
+category: turret
+research: {
+  parent: core-shadow
+  objectives: [
+    burning-generator,
+    silicon
+  ]
+}
+requirements: [
+  Electrum/20
+  cobalt/40
+  silicon/45
+  lead/50
+]
+consumes: {
+  power: 0.5
+}
+coolant: {
+  type: ConsumeCoolant
+  allowGas: false
+  allowLiquid: true
+  amount: 0.2
+}

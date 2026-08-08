@@ -7,7 +7,7 @@ inaccuracy: 0
 drawer: {
   type: DrawTurret
 }
-shootSound: shoot-small-flame
+shootSound: shootSmite
 researchCostMultiplier: 3.0
 range: 180
 shootY: 6
@@ -41,20 +41,20 @@ ammoTypes: {
     length: 240
     width: 3.3
     colors: [d77751, e78f6c, fca988, ffc5ae, ffffff]
-    statusEffect: burning
+    statusEffect: melting
   }
 }
 category: turret
 research: {
-   parent: scorch 
+   parent: fire-turret
    objectives: [
-      scorch,
+      fire-turret,
       Electrum
    ]
 }
 requirements: [
-  copper/500
-  graphite/180
-  Electrum/120
-  titanium/240
+  copper/120
+  lead/100
+  Electrum/80
+  cobalt/130
 ]
