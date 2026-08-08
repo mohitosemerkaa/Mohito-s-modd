@@ -14,9 +14,9 @@ shootType: {
   colors: [00fffb, 97fbfc, ffffff]
   lightningColor: 97fbfc
   lightning: 1
-  lightningLength: 93
-  lightningDamage: 30
-  lightningCone: 15
+  lightningLength: 10
+  lightningDamage: 17
+  lightningCone: 30
   buildingDamageMultiplier: 0.3
   piercing: true
   }
