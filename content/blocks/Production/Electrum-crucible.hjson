@@ -4,13 +4,14 @@ description: Fuses titanium and silicon into large quantities of Electrum. Requi
 size: 3
 scaledHealth: 120
 craftEffect: smeltsmoke
+itemCapacity: 20
 outputItems: [
   Electrum/7
 ]
 consumes: {
   power: 4.3
   items: [
-    titanium/5
+    cobalt/5
     silicon/2
   ]
 }
@@ -20,14 +21,13 @@ research: {
   parent: electrumSmelter
 }
 requirements: [
-  copper/190
-  silicon/120
-  titanium/120
-  lead/100
-  plastanium/80
+  copper/100
+  silicon/20
+  cobalt/40
+  lead/80
   Electrum/40
 ]
-researchCostMultiplier: 6.0
+researchCostMultiplier: 1.1
 drawer: {
   type: DrawMulti
   drawers: [
