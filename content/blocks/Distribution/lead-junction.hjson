@@ -1,0 +1,17 @@
+type: Junction
+category: distribution 
+name: Lead junction
+description: Allows to crossing two conveyors.
+size: 1
+health: 30
+speed: 0.3
+capacity: 5
+requirements: [
+  lead/2
+]
+research: {
+  parent: lead-conv
+  requirements: [
+    lead/100
+  ]
+}

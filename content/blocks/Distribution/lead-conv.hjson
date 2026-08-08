@@ -1,0 +1,18 @@
+name: Lead conveyor
+category: distribution
+type: Duct
+speed: 3.0
+displaySpeed: 3.0
+health: 30
+acceptItems: true
+bridgeReplacement: lead-conv-bridge
+junctionReplacement: lead-junction
+requirements: [
+  lead/1
+]
+research: {
+  parent: core-shadow
+  requirements: [
+    lead/80
+  ]
+}

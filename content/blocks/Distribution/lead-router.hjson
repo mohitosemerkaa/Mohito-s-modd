@@ -1,0 +1,16 @@
+type: Router
+name: Lead router
+description: Distributes items in 3 directions.
+category: distribution
+health: 30
+size: 1
+capacity: 1
+requirements: [
+  lead/3
+]
+research: {
+  parent: lead-junction
+  requirements: [
+    lead/200
+  ]
+}
