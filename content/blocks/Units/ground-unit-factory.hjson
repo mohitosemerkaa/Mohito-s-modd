@@ -9,7 +9,6 @@ requirements: [
 plans: [
   {
     unitType: quarrel
-    unit: quarrel
     requirements: [
     silicon/20
     lead/20
