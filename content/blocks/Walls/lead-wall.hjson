@@ -1,0 +1,12 @@
+type: Wall
+name: Lead Wall
+description: Protects structures from incoming damage. 
+size: 1
+health: 800
+requirements: [
+  lead/4
+  copper/2
+]
+research: core-shadow
+category: defense
+researchCostMultiplier: 0.5

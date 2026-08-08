@@ -1,0 +1,12 @@
+type: Wall
+name: Large lead wall
+description: Big wall that protects structures from incoming damage. 
+size: 2
+health: 3200
+requirements: [
+  lead/20
+  copper/4
+]
+research: lead-wall
+category: defense
+researchCostMultiplier: 0.5

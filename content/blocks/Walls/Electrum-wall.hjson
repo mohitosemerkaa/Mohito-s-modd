@@ -1,0 +1,12 @@
+type: Wall
+name: Electrum Wall
+description: Protects structures from incoming damage. 
+size: 1
+health: 1000
+requirements: [
+  Electrum/4
+  cobalt/2
+]
+research: lead-wall
+category: defense
+researchCostMultiplier: 1.0

@@ -1,0 +1,12 @@
+type: Wall
+name: Large Electrum Wall
+description: Big wall that protects structures from incoming damage. 
+size: 2
+health: 4000
+requirements: [
+  Electrum/20
+  cobalt/4
+]
+research: Electrum-wall
+category: defense
+researchCostMultiplier: 1.0
