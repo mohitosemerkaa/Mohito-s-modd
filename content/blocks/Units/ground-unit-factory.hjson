@@ -1,0 +1,35 @@
+name: Ground unit factory
+type: UnitFactory
+requirements: [
+    Electrum/120
+    cobalt/120
+    silicon/100
+    lead/100
+]
+plans: [
+  {
+    unitType: quarrel
+    unit: quarrel
+    requirements: [
+    silicon/20
+    lead/20
+    ]
+    time: 1200
+  } 
+]
+consumes: {
+    power: 1.3
+}
+size: 3
+category: units
+research: {
+    parent: core-shadow
+    objectives: [
+        silicon,
+        {
+            type: OnSector
+            preset: Mines
+        }
+    ]
+}
+researchCostMultiplier: 0.3
