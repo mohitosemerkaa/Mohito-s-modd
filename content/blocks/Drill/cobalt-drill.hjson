@@ -1,0 +1,39 @@
+type: BurstDrill
+name: Cobalt Drill
+description: Drill that mines ores
+size: 2
+category: production
+hasLiquids: false
+research: {
+  parent: copper-drill
+}
+hardnessDrillMultiplier: 40
+drillTime: 240
+hasPower: false
+tier: 2
+shake: 0.1
+itemCapacity: 20
+researchCostMultiplier: 0.3
+requirements: [
+  copper/15
+  cobalt/30
+]
+squareSprite: true
+drawer: {
+  type: DrawMulti 
+  drawers: [
+    {
+    type: DrawDefault
+    }
+    {
+    type: DrawRegion
+    suffix: -top
+    }
+    {
+    type: DrawRegion
+    suffix: -rotator
+    rotateSpeed: 3
+    }
+  ]
+}
+  
