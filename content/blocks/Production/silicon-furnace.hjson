@@ -1,6 +1,6 @@
 type: GenericCrafter
 name: Silicon furnace
-description: ""
+description: "Making silicon from coal and sand"
 size: 2
 scaledHealth: 130
 craftEffect: smeltsmoke
